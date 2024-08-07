@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alva's - Shobhavana</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- main navbar -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-nature shadow" id="navbar">
+        <div class="container">
+            <a class="navbar-brand p-0" href="/nature/index.html">
+                <p>𝓝𝓪𝓽𝓾𝓻𝓮
+                <img src="assets/img/logo.png" alt="" class="w-20" /> 𝓟𝓪𝓻𝓴</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav me-auto fs-6">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="#index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="species.html">Species</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="herbarium.html">Herbarium</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="vana.html">Vana</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="blog.html">Blogs</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <div class="overlay-about">
+        <img src="assets/img/hero3.jpeg" alt="About the Camp" class="w-100 hero-about" />
+    </div>
+
+    <div class="about-container">
+        <div class="about-text-container">
+            <h1 class="col-lg-7 col-md-10 text-white">Welcome to Shobhavana's Herbarium</h1>
+            <p class="col-lg-10 col-md-10 text-white pt-2">
+                "Welcome to our botanical treasure trove, the herbarium sanctuary."
+            </p>
+        </div>
+    </div>
+
+
+    <!-- visiting spots -->
+    <section class="bg-light pt-5 pb-5" id="visiting">
+        <div class="container">
+            <div class="search">
+            <div class="row text-center">
+                <h2 class="display-5">Herbarium</h2>
+                <p>"Step into the captivating world of Alva's herbarium at ATMA research center, where preserved botanical wonders come to life. Explore a treasure trove of dried plants, meticulously curated and cataloged. Immerse yourself in the beauty of nature's diverse flora, as you learn about their medicinal properties and ecological significance. Unlock the secrets of plant life at our enchanting herbarium today!"</p>
+                    <form>
+                        <input type="text"  id="input-box" placeholder="Search.." onkeyup="search()" autocomplete="off">
+                      </form>
+            <div class="result-box">
+                </div>
+            </div>
+          
+                <!-- display of images outside of lightbox, click to open lightbox -->
+                <div class=" pt-3">
+                <div class="row">
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/arjuna.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(1)">
+                                <p class="fs-3">Sandalwood Tree</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/arka.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(2)">
+                                <p class="fs-3">Peepal Tree</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/sandalwood.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(3)">
+                                <p class="fs-3">Arjuna Tree</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/bigtree.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(4)">
+                                <p class="fs-3">Pomegranate Tree</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/leo.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(5)">
+                                <p class="fs-3">Night-Flowering Jasmine</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/noni.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(6)">
+                                <p class="fs-3">Vitex trifolia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/nirgundi.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(7)">
+                                <p class="fs-3">Leo Tree</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/parijatha.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(8)">
+                                <p class="fs-3">Areca Tree</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/parijatha.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(9)">
+                                <p class="fs-3">Hibiscus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/parijatha.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(10)">
+                                <p class="fs-3">Gooseberry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/parijatha.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(11)">
+                                <p class="fs-3">Kokam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lightCol mb-4 col-lg-3 col-md-6">
+                        <div class="img_wrap">
+                            <img src="assets/img/parijatha.jpg" class="shadow w-100 img_img img_tree">
+                            <div class="img_description text-center" onclick="openLight();currentLight(12)">
+                                <p class="fs-3">Mangosteen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- this is the lightbox that pops up when you click on one of the photos -->
+
+                <div id="lightBox" class="theLightBox ">
+                    <span class="closeBox" onclick="closeLight()">&times;</span>
+                    <div class="lightImgL p-3 rounded border shadow">
+
+                        <!-- the slide up top -->
+                        <div class="lightSlides">
+                            <h3>Sandalwood Tree</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start" src="assets/img/arjuna.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Santalum album</p>
+                                    <p>Family: Santalaceae</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p>Order: Santalales</p><br>
+                                    <p class="mb-0">Aromatherapy: The rich, warm, and woody scent of sandalwood helps to
+                                        encourage rest, lessen stress, and quiet the mind. It is frequently used in
+                                        aromatherapy to promote calmness and peace.
+                                        characteristics that reduce inflammation: Sandalwood has strong
+                                        anti-inflammatory
+                                        characteristics that can help treat skin issues like rashes, itching, and mild
+                                        burns
+                                        by reducing inflammation. Because of its calming properties, it is frequently
+                                        used
+                                        as a component in creams, lotions, and ointments.
+                                        Properties that are antiseptic and antibacterial: Sandalwood essential oil has
+                                        both
+                                        of these qualities. It can be applied topically to clean cuts, stop infections,
+                                        and
+                                        hasten recovery.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Peepal Tree</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start" src="assets/img/arjuna.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Ficus religiosa</p>
+                                    <p>Family: Moraceae</p>
+                                    <p>Order: Rosales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">The peepal tree is a kind of tree in the fig family (Moraceae),
+                                        commonly
+                                        known as the sacred fig or Ficus religiosa. Hinduism, Buddhism, and Jainism are
+                                        just
+                                        a few of the many civilizations and faiths that place a high value on it.
+                                        Although it is native to the Indian subcontinent, peepal trees are also found in
+                                        other regions of Asia. It is a big deciduous tree with heart-shaped,
+                                        distinctively
+                                        pointed leaves. The tree has a broad canopy and can reach a height of 30
+                                        metres.The
+                                        peepal tree is revered in Hinduism and frequently linked to Lord Vishnu. It is
+                                        seen
+                                        to be a spiritually significant manifestation of numerous gods. Many people
+                                        think
+                                        that ritualistic behaviour or submerged meditation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Arjuna tree
+                            </h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/sandalwood.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Terminalia arjuna</p>
+                                    <p>Family: Combretaceae</p>
+                                    <p>Order: Myrtales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">The Terminalia arjuna, also referred to as the Arjuna tree, is a
+                                        species
+                                        of giant deciduous tree that is indigenous to the Indian subcontinent. It is
+                                        named
+                                        after the legendary warrior prince Arjuna from the Hindu epic, the Mahabharata,
+                                        and
+                                        is a member of the Combretaceae family.
+
+                                        In India, the Arjuna tree can be found all throughout, but it is most prevalent
+                                        in
+                                        the country's central and southern regions. It usually reaches a height of 20 to
+                                        27
+                                        metres and has a spreading crown with drooping branches. Smooth and
+                                        grayish-white
+                                        with a distinctive pattern of vertical stripes, the bark of the Arjuna tree is
+                                        smooth.The therapeutic properties of the Arjuna tree have been utilised in
+                                        several
+                                        aspects of traditional Indian medical systems like Ayurveda. Particularly the
+                                        bark
+                                        is highly prized for its medicinal properties. It is thought to Arjuna bark is
+                                        frequently processed into powders, extracts, or decoctions that are utilised in
+                                        herbal medicines and Ayurvedic formulations. It is thought to boost
+                                        cardiovascular
+                                        health overall, increase blood circulation, control blood pressure, and assist
+                                        strengthen the heart muscles. It is also renowned for having anti-inflammatory
+                                        and
+                                        antioxidant qualities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Pomegranate</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start" src="assets/img/bigtree.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Punica granatum</p>
+                                    <p>Family: Lythraceae</p>
+                                    <p>Order: Myrtales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">Punica granatum is the scientific name for the fruit-bearing plant
+                                        that
+                                        produces pomegranates. It is a member of the Lythraceae family and is a tiny,
+                                        deciduous shrub or tree. Although pomegranate plants are native to the area from
+                                        Iran to the Himalayas in northern India, they are now grown in many other
+                                        climate-friendly regions of the world.
+                                        Pomegranate plants are well-known for its colourful, unusual fruit, which is
+                                        normally spherical and the size of a large apple. The fruit's skin is rough and
+                                        leathery and varies in colour from deep red to yellowish. The pomegranate's
+                                        interior
+                                        is made up of many juicy seeds called arils that are covered in a white pith.
+                                        The
+                                        fruit's edible section, the arils, are coveted for its sweet flavour.Pomegranate
+                                        plants can survive and grow in a variety of conditions, from arid to
+                                        subtropical.
+                                        They love soil that drains well and full light. Pomegranate trees can take
+                                        several
+                                        years to mature and begin bearing fruit. They are often propagated through
+                                        cuttings
+                                        or grafting.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Night-flowering Jasmine</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start" src="assets/img/leo.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name:  Nyctanthes arbor-tristis</p>
+                                    <p>Family: Oleaceae</p>
+                                    <p>Order: Lamiales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">The Parijatha tree, sometimes called the Coral Jasmine or
+                                        Night-flowering Jasmine, is a lovely and incredibly fragrant flowering tree.In
+                                        many
+                                        cultures, the Parijatha tree has great religious and cultural significance. It
+                                        is
+                                        regarded as a divine tree in Hindu mythology and is connected to Lord Krishna.
+                                        The
+                                        tree is revered as a representation of eternal love, divine beauty, and
+                                        devotion.
+                                        In Indian tradition, the Parijatha tree has long been regarded as sacred. It is
+                                        revered and connected to a number of religious and mythical beliefs. The tree is
+                                        renowned for its therapeutic qualities as well. Traditional Ayurvedic medicine
+                                        uses
+                                        its leaves, blossoms, and bark to cure a variety of illnesses, such as fever,
+                                        arthritis, digestive disorders, and skin conditions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Vitex Trifolia</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start" src="assets/img/noni.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Vitex trifolia</p>
+                                    <p>Family: Lamiaceae</p>
+                                    <p>Order: Lamiales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">Vitex trifolia is a species of flowering plant in the family
+                                        Asteraceae,
+                                        also known as three-leaf beggarticks or three-part beggarticks. Clusters of the
+                                        plant's tiny, golden blooms are produced. The flowers are shaped like discs and
+                                        are
+                                        encircled by a number of bracts. Following flowering, the plant releases tiny
+                                        seeds
+                                        with barbed ends that make it simple for them to cling to clothing, feathers, or
+                                        fur, aiding in their spread.Three-leaf Beggarticks are significant ecologically
+                                        because they serve as a source of food for some insects and birds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Leo Tree</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/nirgundi.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Ficus racemosa</p>
+                                    <p>Family: Moraceae</p>
+                                    <p>Order: Rosales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">The Moraceae family of trees includes Ficus recemosa, also referred
+                                        to
+                                        as the Leo Tree or the Red Sandalwood Fig. Ficus recemosa is a species that is
+                                        native to parts of South Asia, including India, Sri Lanka, and Myanmar, however
+                                        it
+                                        is not a commonly known or well-researched species.The Leo Tree can grow to a
+                                        height
+                                        of around 10 to 20 metres (33 to 66 feet), which is a moderate height. Large,
+                                        glossy
+                                        leaves and small, rounded fig fruits that become scarlet when ripe are what make
+                                        this plant unique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Areca</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/parijatha.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Areca catechu</p>
+                                    <p>Family: Arecaceae</p>
+                                    <p>Order: Arecales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">Areca catechu, also referred to as the areca nut plant, is a type of
+                                        palm tree that is a member of the Arecaceae family. It is also frequently
+                                        referred
+                                        to as the supari palm or the betel nut palm. Although it is native to tropical
+                                        Asia,
+                                        mainly India and Malaysia, the areca nut palm is now grown in many locations
+                                        throughout the world with acceptable conditions.
+                                        A medium-sized tree, the areca nut palm normally reaches a height of 10 to 20
+                                        metres. It has a thin stem and fluffy, arched leaves that can grow up to 2.5
+                                        metres
+                                        long on its crown. Large clusters of oval-shaped fruits, also referred to as
+                                        areca
+                                        nuts or betel nuts, are produced by the tree.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Hibiscus</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/parijatha.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Hibiscus</p>
+                                    <p>Family: Malvaceae</p>
+                                    <p>Order:  Malvales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">The Malvaceae family of flowering plants includes the genus
+                                        Hibiscus. It is a huge genus with hundreds of species that are native to warm
+                                        temperate, subtropical, and tropical areas all over the world. The most
+                                        well-known variety is Hibiscus rosa-sinensis, sometimes called rose mallow or
+                                        Chinese hibiscus.The huge, beautiful flowers of hibiscus plants, which can be
+                                        red, pink, yellow, orange, or white, are what make them so popular. The majority
+                                        of the time, flowers have five petals and a large central stamen. They have a
+                                        history of luring pollinators including hummingbirds, butterflies, and bees.
+                                        Hibiscus bushes often feature huge, spectacular flowers that range in colour
+                                        from red to pink to orange to yellow to white. The flowers frequently have five
+                                        or more petals and a large stamen in the centre.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Gooseberry</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/parijatha.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <!-- <p>Scientific name: Areca catechu</p>
+                                    <p>Family: Arecaceae</p>
+                                    <p>Order: Arecales</p>
+                                    <p>Kingdom: Plantae</p> -->
+                                    <p class="mb-0">Gooseberry is the name for a plant that produces small, rounded
+                                        berries. It belongs to the Grossulariaceae family's Ribes genus. Gooseberries
+                                        are adaptable fruits that can be consumed in a variety of ways. Although their
+                                        tartness may be too strong for some individuals, they can be eaten uncooked.
+                                        They are frequently used in jams, jellies, pies, sweets, and sauces when
+                                        cooking. They are useful for preparing preserves due to their high pectin
+                                        content.
+                                        Gooseberries are valued for their nutrients in addition to their culinary
+                                        applications. They are a good source of dietary fibre, antioxidants, and
+                                        vitamins C and E. They can be a nutritious supplement to a balanced diet and are
+                                        low in calories.
+                                        A plant known as "Indian gooseberry" or "amla" (Emblica officinalis), which is
+                                        unrelated to the European gooseberry, should also be mentioned. Known for its
+                                        high vitamin C content and a number of health advantages, Indian gooseberry is a
+                                        fruit that is frequently utilised in Ayurvedic medicine.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Kokam</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/parijatha.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Garcinia indica</p>
+                                    <!-- <p>Family: Arecaceae</p>
+                                    <p>Order: Arecales</p>
+                                    <p>Kingdom: Plantae</p> -->
+                                    <p class="mb-0">The Kokam fruit, often referred to as Garcinia indica, is a tiny
+                                        fruit that is indigenous to India's Western Ghats. Maharashtra, Goa, and
+                                        Karnataka are the states where it is most commonly grown. Particularly in the
+                                        coastal regions, kokam is a widely used element in traditional Indian cuisine.
+                                        The fruit is normally the size of a cherry tomato, being small and rounded. It
+                                        has a tangy-sweet flavour and a reddish-purple skin. The inside pulp is utilised
+                                        to create reviving beverages, syrups, and culinary preparations, while the outer
+                                        peel is dried and employed as a souring component in a variety of cuisines.
+                                        Kokam is widely recognised for its therapeutic qualities. It includes
+                                        hydroxycitric acid (HCA), which is thought to have appetite-suppressing and
+                                        weight loss qualities, and is high in antioxidants. Additionally, kokam is
+                                        claimed to promote digestion, reduce acidity, and keep the body cool in hot
+                                        weather. It is frequently consumed as a cool beverage to fend against
+                                        dehydration and heat exhaustion.
+                                        Kokam has been utilised in conventional Ayurvedic medicine for its therapeutic
+                                        advantages in addition to its culinary and medicinal purposes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lightSlides">
+                            <h3>Mangosteen</h3>
+                            <div class="row pt-3 pb-3">
+                                <img class="largeLightImgTop col-lg-4 col-md-6 text-start"
+                                    src="assets/img/parijatha.jpg">
+                                <div class="p-3 col-lg-8 col-md-6">
+                                    <p>Scientific name: Garcinia mangostana</p>
+                                    <p>Family: Clusiaceae</p>
+                                    <p>Order: Malpighiales</p>
+                                    <p>Kingdom: Plantae</p>
+                                    <p class="mb-0">Southeast Asia is the original home of the tropical fruit known as
+                                        the mangosteen (Garcinia mangostana). It is frequently referred to as the "queen
+                                        of fruits" and is well recognised for its sweet and sour flavour.
+                                        The mangosteen has a thick, purple exterior and a luscious, white interior. Each
+                                        segment of the pulp—which resembles the segments of an orange—contains a seed.
+                                        The pulp, which is the fruit's edible portion, is widely valued for its
+                                        delectable flavour and health advantages.
+                                        Mangosteen is well known for having a high concentration of antioxidants such
+                                        xanthones, which are thought to provide a number of health advantages. In some
+                                        cultures, it is frequently consumed raw or used in juices, smoothies, sweets,
+                                        and traditional medicines.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- contact section  -->
+    <section id="contact" class="p-3">
+        <div class="container">
+            <h2 class="display-6">Contact For Visiting</h2>
+            <div class="row pt-3">
+                <div class="border p-1 rounded">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.2071442625786!2d74.96723677088448!3d13.022157824555121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4ab41a54d4ab1%3A0xdd1c1a42325163f!2sShobhavana!5e0!3m2!1sen!2sin!4v1677948100684!5m2!1sen!2sin"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-6">
+                    <div class="border rounded p-2 text-center shadow mb-2">
+                        <p class="fw-bold fs-5">Our Address:</p>
+                        Shobhavana, Tenkamijar<br>
+                        Near Alva's Homeopathic Medical College MIJAR, <br> Moodbidri, Karnataka
+                        574225
+                    </div>
+                </div>
+                <div class="col-lg-3 my-auto">
+                    <div class="border rounded p-3 text-center shadow mb-2">
+                        <p class="fw-bold fs-5">Email Us:</p>
+                        info@gmail.com<br>
+                        info@gmail.com
+                    </div>
+                </div>
+                <div class="col-lg-3 my-auto">
+                    <div class="border rounded p-3 text-center shadow mb-2">
+                        <p class="fw-bold fs-5">Call Us:</p>
+                        +91 9876543210<br>
+                        +91 9876543210
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main footer -->
+    <footer class="py-4 mt-3 bg-dark text-white text-center">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Alvas</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">Designed by <a href="https://poncontra.com/"
+                    class="text-white text-decoration-none">Poncontra ❤️</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+        <script src="autocomplete.js"></script>
+
+
+    <script>
+        // opens lightbox when one of the gallery images is clicked
+        function openLight() {
+            document.getElementById("lightBox").style.display = "block";
+        }
+
+        // closes the lightbox when you click the big X
+        function closeLight() {
+            document.getElementById("lightBox").style.display = "none";
+        }
+
+        var lightIndex = 1;
+        showLight(lightIndex);
+
+        // shows the current slide at a bigger size 
+        function currentLight(n) {
+            showLight(lightIndex = n);
+        }
+
+        function showLight(n) {
+            var i;
+            var slides = document.getElementsByClassName("lightSlides");
+            var dots = document.getElementsByClassName("largeLightImgThumb");
+            if (n > slides.length) { lightIndex = 1 }
+            if (n < 1) { lightIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[lightIndex - 1].style.display = "block";
+            dots[lightIndex - 1].className += " active";
+            captionText.innerHTML = dots[lightIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
+</html>
